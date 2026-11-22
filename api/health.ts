@@ -1,0 +1,6 @@
+export default function handler(_req: any, res: any) {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'application/json; charset=utf-8');
+  res.setHeader('Cache-Control', 'no-store');
+  res.end(JSON.stringify({ success: true, service: 'KieGen Creative Studio API', runtime: 'vercel-function', timestamp: new Date().toISOString() }));
+}
